@@ -4,7 +4,7 @@ CPU-first full-stack project for image-based plant disease classification and vi
 
 ## Current model status
 
-The MobileNetV3-Small classifier was trained on 54,305 PlantVillage images covering 38 labels. Its saved internal validation accuracy is 94.14%; this is not an independent field-performance estimate, and the score is not calibrated. The classifier checkpoint is in `saved_models/`. A trained leaf/lesion segmentation checkpoint is not available, so exact lesion masks and affected-area percentages are not produced.
+The MobileNetV3-Small classifier was trained on 54,305 PlantVillage images covering 38 labels. Its saved internal validation accuracy is 94.14%; this is not an independent field-performance estimate, and the score is not calibrated. The trained checkpoint is available only in the local working copy and is not redistributed here because the PlantVillage image redistribution terms have not been verified. A trained leaf/lesion segmentation checkpoint is not available, so exact lesion masks and affected-area percentages are not produced.
 
 ## Architecture
 
@@ -163,6 +163,8 @@ The fetcher retains the upstream `README.md` and `LICENSE.txt`, sanitizes invali
 PlantDoc's images are internet-collected natural-background examples, not a prospectively sampled farm/session cohort. The external test result is a cross-dataset stress test, not definitive field generalization or validated OOD assessment. Baseline promotion is blocked unless both checkpoints have verified provenance for the same split manifest.
 
 The dataset paper is Davinder Singh, Naman Jain, Pranjali Jain, Pratik Kayal, Sudhakar Kumawat, and Nipun Batra, “PlantDoc: A Dataset for Visual Plant Disease Detection” (2020), [ACM DOI 10.1145/3371158.3371196](https://doi.org/10.1145/3371158.3371196), [arXiv:1911.10317](https://arxiv.org/abs/1911.10317). The repository and license are at [pratikkayal/PlantDoc-Dataset](https://github.com/pratikkayal/PlantDoc-Dataset).
+
+The licensed PlantDoc copy, its upstream README, license, and source manifest are included under `data/raw/PlantDoc_dataset/`; image files are stored with Git LFS. The PlantVillage images are not included because this checkout has no verified redistribution license for them. Obtain PlantVillage from its [upstream repository](https://github.com/spMohanty/PlantVillage-Dataset) and follow its terms before using or redistributing it.
 
 ## Single-leaf and whole-plant screening
 

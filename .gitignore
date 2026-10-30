@@ -17,6 +17,8 @@ data/processed/*
 data/masks/*
 saved_models/*
 reports/generated/*
+!data/raw/PlantDoc_dataset/
+!data/raw/PlantDoc_dataset/**
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/masks/.gitkeep
